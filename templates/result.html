@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Результат сканирования</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; text-align: center; }
+        .result { font-size: 24px; margin: 20px 0; padding: 20px; border: 2px solid #4CAF50; }
+        a { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #4CAF50; color: white; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <h1>Результат сканирования</h1>
+    <div class="result">
+        Распознанный штрих-код: <strong>{{ barcode }}</strong>
+    </div>
+    <a href="{{ url_for('index') }}">Сканировать ещё</a>
+</body>
+</html>
